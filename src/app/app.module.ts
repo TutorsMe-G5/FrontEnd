@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { ReviewsPageComponent } from './rate/pages/reviews-page/reviews-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FooterContentComponent,
     HomeComponent,
     NavBarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ReviewsPageComponent
   ],
   imports: [
     BrowserModule,
