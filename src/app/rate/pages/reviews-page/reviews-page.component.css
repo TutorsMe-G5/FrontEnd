@@ -1,3 +1,17 @@
+.reviews-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .review-card{
   max-width: 600px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #7AC8C7;
+}
+
+h1{
+  color: #0D5C63;
+  font-weight: bold;
 }

@@ -15,6 +15,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { ReviewsPageComponent } from './rate/pages/reviews-page/reviews-page.component';
 import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule} from "@angular/common/http";
+import { StarRatingComponent } from './rate/component/star-rating/star-rating.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HttpClientModule} from "@angular/common/http";
     HomeComponent,
     NavBarComponent,
     PageNotFoundComponent,
-    ReviewsPageComponent
+    ReviewsPageComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

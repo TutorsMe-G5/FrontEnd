@@ -1,20 +1,26 @@
-<h2>What your students think about you!</h2>
+<div class="reviews-page">
+  <h1>What your students think about you!</h1>
 
-<mat-card class="review-card" *ngFor="let review of reviews">
-  <mat-card-header>
-    <mat-card-title>{{review.title}}</mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="" alt="Photo of the bundle">
-  <mat-card-content>
-    <p>
-      Title: {{review.title}}<br>
-      Rating: {{review.rate}}<br>
-      Description: {{review.description}}<br>
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
+  <mat-card class="review-card" *ngFor="let review of reviews">
+    <mat-card-header>
+      <mat-card-title>{{review.title}}</mat-card-title>
+    </mat-card-header>
+    <!--
+    <img mat-card-image src='{{review.img}}' alt="Photo of the bundle">
+    -->
+    <mat-card-content>
+      <app-star-rating [rating]="review.rate"></app-star-rating>
+      <p>
+        Description: {{review.description}}<br>
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <!--
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+      -->
+    </mat-card-actions>
+  </mat-card>
+</div>
+
 

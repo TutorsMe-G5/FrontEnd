@@ -10,6 +10,7 @@ import {ReviewsService} from "../../service/reviews.service";
 export class ReviewsPageComponent implements OnInit{
 
   public reviews: Review[];
+  currentRating: number = 1;
 
   constructor(public reviewService: ReviewsService) {
     this.reviews = [];
