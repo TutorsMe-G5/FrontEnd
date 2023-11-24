@@ -10,7 +10,7 @@ export class NavBarComponent {
   options = [
     {path: '/home', title: 'Home'},
     {path: '/students', title: 'Your students!'},
-    {path: '/rating', title: 'Rating from your students'},
+    {path: '/rating', title: 'Rating'},
     {path: '/perfil', title: 'Perfil'}
   ]
 }

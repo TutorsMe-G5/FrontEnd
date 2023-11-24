@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ReviewsPageComponent } from './rate/pages/reviews-page/reviews-page.component';
+import {MatCardModule} from '@angular/material/card';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { ReviewsPageComponent } from './rate/pages/reviews-page/reviews-page.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule, MatButtonModule, MatIconModule
+    MatToolbarModule, MatButtonModule, MatIconModule, MatCardModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
