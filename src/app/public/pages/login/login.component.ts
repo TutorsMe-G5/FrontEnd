@@ -10,8 +10,10 @@ import {AuthService} from "../../../authentication/service/auth.service";
 export class LoginComponent implements OnInit{
 
   public myForm!: FormGroup;
+  public signIn: boolean;
 
   constructor(private fb: FormBuilder, private loginProv: AuthService) {
+    this.signIn = false;
   }
   ngOnInit(): void {
     this.myForm = this.createMyForm();
@@ -33,6 +35,10 @@ export class LoginComponent implements OnInit{
     if (!this.loginProv.logIn(this.myForm.value)){
       alert("Invalid user or password")
     }
+  }
+
+  hideThis(){
+
   }
 
 }

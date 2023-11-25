@@ -36,5 +36,12 @@ h1{
   background-color: #0D5C63;
   color: white;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.signInButton{
+  background-color: #FBD656;
+  color: black;
+  font-weight: bold;
   /*margin-bottom: 60px;*/
 }

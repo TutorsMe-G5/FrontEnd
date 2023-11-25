@@ -1,4 +1,7 @@
-<app-login *ngIf="!visualizarMenu()"></app-login>
+<div *ngIf="!visualizarMenu()">
+  <app-login></app-login>
+  <app-sign-in></app-sign-in>
+</div>
 
 <div *ngIf="visualizarMenu()">
   <app-nav-bar></app-nav-bar>

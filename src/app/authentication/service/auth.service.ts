@@ -2,6 +2,7 @@ import {Injectable, OnInit} from '@angular/core';
 import {UserTeacher} from "../../perfil/model/user-teacher.entity";
 import {TeacherService} from "../../perfil/service/teacher.service";
 import {UserService} from "../../perfil/service/user.service";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +27,10 @@ export class AuthService implements OnInit{
 
   logOut(): void {
     this.isAuthenticated = false;
+  }
+
+  signIn(teacher: UserTeacher): Observable<any> {
+    return this.teacherService.create(teacher);
   }
 
   isAuthenticatedUser(): boolean {

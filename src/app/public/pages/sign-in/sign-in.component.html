@@ -1,1 +1,38 @@
-<p>sign-in works!</p>
+<div class="signin-c">
+
+  <h1>Welcome Tutor!</h1>
+
+  <h2>Sign in</h2>
+
+  <form [formGroup]="myForm" (ngSubmit)="submitFormulario()" class="myForm">
+
+    <p>Set your data in the boxes.</p>
+
+    <mat-form-field class="form-width">
+      <mat-label>Firstname</mat-label>
+      <input formControlName="firstname" matInput placeholder="Name" type="text">
+    </mat-form-field>
+
+    <mat-form-field class="form-width">
+      <mat-label>Lastname</mat-label>
+      <input formControlName="lastname" matInput placeholder="Lastname" type="text">
+    </mat-form-field>
+
+    <mat-form-field class="form-width">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" matInput placeholder="example@mail.com" type="email">
+    </mat-form-field>
+
+    <mat-form-field class="form-width">
+      <mat-label>Password</mat-label>
+      <input formControlName="password" matInput placeholder="Your password" type="password">
+    </mat-form-field>
+
+    <p>¿Enable notifications?</p>
+    <mat-slide-toggle [(ngModel)]="enableMessages" [ngModelOptions]="{standalone: true}">Yes</mat-slide-toggle>
+
+    <button mat-button class="signinButton" type="submit">Sign in!</button>
+    <button mat-button class="backToLogButton" type="button">Back to log</button>
+  </form>
+
+</div>

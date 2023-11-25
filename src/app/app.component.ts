@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AuthService} from "./authentication/service/auth.service";
+import {LoginComponent} from "./public/pages/login/login.component";
 
 @Component({
   selector: 'app-root',
@@ -15,5 +16,7 @@ export class AppComponent{
   public visualizarMenu():boolean{
     return this.loginProv.isAuthenticatedUser();
   }
+
+
 
 }
