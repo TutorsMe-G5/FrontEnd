@@ -1,18 +1,22 @@
-.reviews-page{
+.perfil-page{
+  height:75%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.review-card{
-  max-width: 600px;
-  padding: 20px;
-  margin: 20px;
+.card{
+  max-width: 500px;
+  padding: 40px;
+  margin: 40px;
   background-color: #7AC8C7;
   border-radius: 25px;
 }
-
-h1{
+h1, h2 {
   color: #0D5C63;
   font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
 }

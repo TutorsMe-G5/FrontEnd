@@ -16,6 +16,7 @@ import { ReviewsPageComponent } from './rate/pages/reviews-page/reviews-page.com
 import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule} from "@angular/common/http";
 import { StarRatingComponent } from './rate/component/star-rating/star-rating.component';
+import { PerfilPageComponent } from './perfil/pages/perfil-page/perfil-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StarRatingComponent } from './rate/component/star-rating/star-rating.co
     NavBarComponent,
     PageNotFoundComponent,
     ReviewsPageComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    PerfilPageComponent
   ],
   imports: [
     BrowserModule,
