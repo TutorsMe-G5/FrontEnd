@@ -22,7 +22,6 @@ export class ReviewsPageComponent implements OnInit{
       },
       (error) => {
         console.error('Error fetching reviews:', error);
-        // You can also display an error message to the user
       }
       )
   }

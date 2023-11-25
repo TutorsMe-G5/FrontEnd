@@ -61,4 +61,10 @@ export class HttpService<T> {
       .pipe(retry(2), catchError(this.handleError));
   }
 
+  getById(id: number): Observable<T> {
+    const url = `${this.resourcePath()}/${id}`;
+    return this.http.get<T>(url, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
+
 }
