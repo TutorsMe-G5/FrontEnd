@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "./public/pages/home/home.component";
+import {HomeComponent} from "./start/pages/home/home.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 import {ReviewsPageComponent} from "./rate/pages/reviews-page/reviews-page.component";
 import {PerfilPageComponent} from "./perfil/pages/perfil-page/perfil-page.component";

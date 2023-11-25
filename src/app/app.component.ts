@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {UserTeacher} from "./perfil/model/user-teacher.entity";
-import {UserService} from "./perfil/service/user.service";
+import {AuthService} from "./authentication/service/auth.service";
 
 @Component({
   selector: 'app-root',
@@ -9,5 +8,12 @@ import {UserService} from "./perfil/service/user.service";
 })
 export class AppComponent{
   title = 'tutorme-teacher-front';
+
+  constructor(private loginProv: AuthService) {
+  }
+
+  public visualizarMenu():boolean{
+    return this.loginProv.isAuthenticatedUser();
+  }
 
 }

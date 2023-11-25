@@ -1,0 +1,28 @@
+<div class="login-c">
+
+  <h1>Welcome to Tutor'sMe!</h1>
+
+  <h2>Log in</h2>
+
+  <form [formGroup]="myForm" (ngSubmit)="submitFormulario()" class="myForm">
+
+    <p>Set your data in the boxes.</p>
+
+    <mat-form-field class="form-width">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" matInput placeholder="example@mail.com" type="email">
+    </mat-form-field>
+
+    <mat-form-field class="form-width">
+      <mat-label>Password</mat-label>
+      <input formControlName="password" matInput placeholder="Your password" type="password">
+    </mat-form-field>
+
+    <button mat-button class="loginButton" type="submit">Log in</button>
+  </form>
+
+</div>
+
+
+
+
