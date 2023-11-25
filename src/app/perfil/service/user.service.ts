@@ -4,7 +4,7 @@ import {UserTeacher} from "../model/user-teacher.entity";
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class UserService{
 
   private currentUser: UserTeacher | null = null;
 

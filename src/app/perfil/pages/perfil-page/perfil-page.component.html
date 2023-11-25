@@ -1,17 +1,24 @@
 <div class="perfil-page">
 
   <h1>Your perfil!</h1>
-  <img src='' alt="Your epic perfil photo">
+
+  <div *ngIf="currentUser">
+    <p>Welcome, {{ currentUser.firstName }}!</p>
+  </div>
+
+  <div class="imgCard">
+    <img src='{{currentUser?.photo}}' alt="Your epic perfil photo">
+  </div>
 
   <div class="card">
-    <h2>Nombre</h2>
+    <h2>{{currentUser?.firstName}} {{currentUser?.lastName}}</h2>
     <ul>
-      <li>+01 000000</li>
-      <li>mail@mail.com</li>
+      <li>{{currentUser?.id}}</li>
+      <li>{{currentUser?.mail}}</li>
     </ul>
 
   </div>
 
-  <button mat-button>Close</button>
+  <button mat-button class="pButton">Close</button>
 </div>
 
